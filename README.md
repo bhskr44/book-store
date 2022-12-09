@@ -74,20 +74,6 @@ After you're finished please remove all the comments and instructions!
   </ul>
 </details>
 
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <!-- <li><a href="https://www.postgresql.org/">PostgreSQL</a></li> -->
-    <li>No database Used</li>
-  </ul>
-</details>
 
 <!-- Features -->
 
@@ -95,7 +81,7 @@ After you're finished please remove all the comments and instructions!
 
 > The top fetaures of the website is.
 
-- **Perform Math Calculations**
+- **Get Status of the Books You would like to read**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,8 +173,8 @@ Example command:
 
 >
 
-- **Calculate Maths Functions**
-- **Basic Navigation in react**
+- **Add Books to read them online**
+- **Add dark mode for convienvce**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,10 +192,15 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+> Hey there!
 
-If you like this project...
+Thanks for checking out my GitHub project of BookStore. I'm really excited to share this project with you!
 
+BookStore is an open source project that provides an easy way to discover and purchase books. With BookStore, you can find books quickly and easily, and support independent authors and publishers.
+
+I'm really passionate about this project and I'm sure that you'll find it helpful, too. I'd really appreciate your support in making this project a success, so please consider contributing or spreading the word about the project.
+
+Thanks for your support!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
