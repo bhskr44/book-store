@@ -228,7 +228,7 @@ I would like to thank... React Community, Microverse community for the immese he
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[How to clone this repository to my local system? ]**
+- **How to clone this repository to my local system?**
 
   - [Use the command below]
 
@@ -237,9 +237,9 @@ I would like to thank... React Community, Microverse community for the immese he
   cd book-store
   ```
 
-- **[Can I Perform math calculations using it?]**
+- **Can I modify this project for my personal use?**
 
-  - [Yes]
+  - Yes
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
