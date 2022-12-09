@@ -1,17 +1,19 @@
 import React from 'react';
 
-const AddBook = () => {
-  return (
-    <div className="addBook">
-      <form>
-        <label htmlFor="title">Title</label>
+const AddBook = () => (
+  <div className="addBook">
+    <form>
+      <label htmlFor="title">
+        Title
         <input type="text" id="title" placeholder="Title" />
-        <label htmlFor="author">Author</label>
+      </label>
+      <label htmlFor="author">
+        Author
         <input type="text" id="author" placeholder="Author" />
-        <button>Add Book</button>
-      </form>
-    </div>
-  );
-};
+      </label>
+      <button type="button">Add Book</button>
+    </form>
+  </div>
+);
 
 export default AddBook;

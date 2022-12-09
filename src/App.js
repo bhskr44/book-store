@@ -1,10 +1,10 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import NavBar from './components/navBar';
 import HomePage from './components/homePage';
 import Categories from './components/categories';
 import Profile from './components/profile';
 import Footer from './components/footer';
-import { BrowserRouter, Routes, Route, useRoutes } from 'react-router-dom';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
