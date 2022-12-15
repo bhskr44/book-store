@@ -20,9 +20,7 @@ const bookSlice = createSlice({
       }
       return '';
     },
-    removeBook: (state, action) => {
-      return state.filter((book) => book.id !== action.payload.id);
-    },
+    removeBook: (state, action) => state.filter((book) => book.id !== action.payload.id),
     default: () => initialState,
   },
 });
