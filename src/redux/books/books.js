@@ -1,6 +1,22 @@
-import { v4 as uuid4 } from 'uuid4';
+import { uuid4 } from 'uuid4';
 
-const initialState = [];
+const initialState = [
+  {
+    id: uuid4(),
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
+  },
+  {
+    id: uuid4(),
+    title: 'Dune',
+    author: 'Frank Herbert',
+  },
+  {
+    id: uuid4(),
+    title: 'A Brief History of Time',
+    author: 'Stephen Hawking',
+  },
+];
 
 // Actions
 export const ADD = 'add-book';
@@ -21,14 +37,14 @@ export default (state = initialState, action) => {
     case ADD: {
       const newBook = {
         id: uuid4(),
-        title: action.payload.title,
-        author: action.payload.author,
+        title: action.book.title,
+        author: action.book.author,
       };
-      initialState.push(newBook);
       return [...state, newBook];
     }
-    case REMOVE:
-      return state.filter((widget) => widget.id !== action.payload.id);
+    case REMOVE: {
+      return state.filter((widget) => widget.id !== action.id);
+    }
     default:
       return state;
   }
