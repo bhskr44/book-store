@@ -6,17 +6,14 @@ const initialState = [];
 export const ADD = 'add-book';
 export const REMOVE = 'remove-book';
 
-
 // Action Creators
 export function addBook(newBook) {
   return { type: ADD, newBook };
 }
 
 export function removeBook(id) {
-  return { type: REMOVE , id};
+  return { type: REMOVE, id };
 }
-
-
 
 // Reducer
 export default (state = initialState, action) => {
