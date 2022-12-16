@@ -59,6 +59,25 @@ export default (state = initialState, action) => {
       return state.filter((widget) => widget.id !== action.id);
     }
     case GETBOOKS: {
+      axios({
+        method: 'GET',
+        url: 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/msW0hxnGD5Hf1orlt2iq/books',
+        headers: {},
+      }).then((response) => {
+        const data = JSON.parse(JSON.stringify(response.data));
+        for (let i = 0; i < Object.keys(data).length; i += 1) {
+          const id = Object.keys(data)[i];
+          const bookDetails = data[Object.keys(data)[0]];
+
+          const { title, author } = bookDetails[0];
+          const book = {
+            id,
+            title,
+            author,
+          };
+          state.push(book);
+        }
+      });
       return state;
     }
     case SETBOOKS: {
