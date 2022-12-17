@@ -1,7 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import './css/addBook.css';
 
 const AddBook = () => {
+  const [title, setTitle] = useState('');
+  const [author, setAuthor] = useState('');
+
   const dispatch = useDispatch();
 
   const addBook = (book) => {
@@ -12,27 +16,49 @@ const AddBook = () => {
   };
 
   const addBookHandler = () => {
-    const title = document.getElementById('title').value;
-    const author = document.getElementById('author').value;
     const book = {
       title,
       author,
     };
+    if (title === '' || author === '') {
+      alert('Please fill in all fields');
+      return;
+    }
     addBook(book);
+    setAuthor('');
+    setTitle('');
+    document.getElementById('title').value = '';
+    document.getElementById('author').value = '';
+  };
+
+  const addChangeHandler = (e) => {
+    const { id, value } = e.target;
+    if (id === 'title') {
+      setTitle(value);
+    } else if (id === 'author') {
+      setAuthor(value);
+    }
   };
 
   return (
     <div className="addBook">
+      <h2>Add New Book</h2>
       <form>
-        <label htmlFor="title">
-          Title
-          <input type="text" id="title" placeholder="Title" />
-        </label>
-        <label htmlFor="author">
-          Author
-          <input type="text" id="author" placeholder="Author" />
-        </label>
-        <button type="button" onClick={addBookHandler}>
+        <input
+          type="text"
+          id="title"
+          placeholder="Title"
+          onChange={addChangeHandler}
+        />
+
+        <input
+          type="text"
+          id="author"
+          placeholder="Author"
+          onChange={addChangeHandler}
+        />
+
+        <button className="add-book-btn" type="button" onClick={addBookHandler}>
           Add Book
         </button>
       </form>

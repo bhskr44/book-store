@@ -1,0 +1,34 @@
+.navbar {
+  padding: 20px 1%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.nav_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav .active {
+  text-decoration: none;
+  color: var(--primary-color);
+}
