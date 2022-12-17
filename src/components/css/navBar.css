@@ -1,0 +1,53 @@
+.navbar {
+  padding: 20px 2%;
+  background-color: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.logo-menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav_title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+nav .active {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.user {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--text-color-light);
+  border-radius: 50%;
+  color: var(--primary-color);
+}

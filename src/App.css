@@ -1,5 +1,32 @@
 :root {
-  --primary-color: rgb(242, 242, 242);
-  --secondary-color: rgb(43, 43, 43);
-  --tertiary-color: rgb(138, 138, 138);
+  --primary-color: #0290ff;
+  --body-color: #f5f6fa;
+  --container-color: #fafafa;
+  --text-color: #888;
+  --text-color-light: rgb(212, 212, 212);
+  --text-color-bold: #333;
+}
+
+body {
+  background-color: var(--body-color);
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.app-conatiner {
+  background-color: var(--container-color);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  margin: 70px 50px;
+  min-width: 600px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
 }

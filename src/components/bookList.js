@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { setBooks } from '../redux/books/books';
 import SingleBook from './singleBook';
+import './css/bookList.css';
 
 const BookList = () => {
   const books = useSelector((state) => state.books);
@@ -39,9 +40,9 @@ const BookList = () => {
 
   return (
     <div className="BookList">
-      <ul>
+      <ul className="book-unordered-list">
         {books.map((sBook) => (
-          <li key={sBook.id}>
+          <li className="book-list-item" key={sBook.id}>
             <SingleBook
               id={sBook.id}
               title={sBook.title}

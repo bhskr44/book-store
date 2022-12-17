@@ -1,12 +1,19 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import PersonIcon from '@mui/icons-material/Person';
+import './css/navBar.css';
 
 const NavBar = () => (
   <header className="navbar">
-    <h1 className="nav_title">Math Magician</h1>
-    <nav className="links_list">
-      <Link to="/">Home</Link>
-      <Link to="/categories">Categories</Link>
-    </nav>
+    <div className="logo-menu">
+      <h1 className="nav_title">Bookstore CMS</h1>
+      <nav className="links_list">
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="/categories">Categories</NavLink>
+      </nav>
+    </div>
+    <div className="user">
+      <PersonIcon />
+    </div>
   </header>
 );
 
